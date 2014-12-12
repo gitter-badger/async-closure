@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [[ ! -e vendor ]]; then
+	if [[ ! -e composer.phar ]]; then
+		php -r "readfile('https://getcomposer.org/installer');" | php
+	fi
+	php composer.phar install -o
+fi
+
+vendor/bin/phpunit
