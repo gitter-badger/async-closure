@@ -1,5 +1,5 @@
 <?php
-namespace Xshifty\Async;
+namespace Xshifty;
 
 class AsyncClosure
 {
